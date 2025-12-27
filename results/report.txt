@@ -1,0 +1,1 @@
+ran nmap and found ports 22 and 8080 open

@@ -1,0 +1,12 @@
+services:
+  kali:
+    build: .
+    container_name: kali_sandbox
+    network_mode: none # No internet access
+    #network_mode: bridge # With internet access
+    user: sandbox
+    volumes:
+      - ./results:/home/sandbox/results
+    stdin_open: true
+    tty: true
+    restart: "no"
